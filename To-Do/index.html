@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+</head>
+<body>
+    
+    <div class="center">
+        <div class="button">
+            <span class="text">To-Do List</span>
+            <span class="icon"><i class="fa-solid fa-circle-down"></i></span>
+        </div>
+        <div class="field">
+            <input type="text" placeholder=" add your new To-do List">
+            <span class="add-btn">Add</span>
+        </div>
+        <ul>
+            <li><span><i class="fa-solid fa-trash"></i></span>Go to college</li>
+            <li><span><i class="fa-solid fa-trash"></i></span>Next week Inteview</li>
+            <li><span><i class="fa-solid fa-trash"></i></span>Tomarrow meeting with clients</li>
+            <li><span><i class="fa-solid fa-trash"></i></span>Company Work</li>
+        </ul>
+    </div>
+    <script>
+        $('.add-btn').click(function(){
+            $('ul').append(" <li><span><i class='fa-solid fa-trash'></i></span>"+ $('input').val()+"</li>");
+            $('input').val("");
+        });  
+        $('ul').on("click",'span', function(){
+        $(this).parent().fadeOut(400, function(){
+            $(this).remove();
+        });  
+        });
+
+    </script>
+    
+</body>
+</html>

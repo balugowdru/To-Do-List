@@ -1,0 +1,111 @@
+
+ body {
+    background-image: url("image/img1.jpg");
+    background-position: absolute;
+ }
+
+
+ *{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    color:#f2f2f2;
+
+    
+}
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:cornflowerblue;
+    border-radius: 8px;
+
+}
+.center .button{
+    width: 350px;
+    /* background:#1b1b1b; */
+    height: 50px;
+    padding: 0  20px;
+    border-radius: 5px 5px 0 0;
+}
+.button  .text{
+    font-size: 25px;
+    font-weight: 600px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    
+
+}
+.button .icon{
+    font-size: 30px;
+    float: right;
+    line-height: 40px;
+    cursor: pointer;
+}
+.center .field{
+    height: 45px;
+    width: 350px;
+    background-color:#f2f2f2;
+    position: relative;
+}
+.field input{
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 18px;
+    outline: none;
+    background: none;
+    color: #202020;
+    border: 2px solid #1b1b1b;
+
+}
+.field .add-btn{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: #1b1b1b;
+    font-size: 17px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    
+}
+.center ul{
+    list-style: none;
+    overflow: hidden;
+}
+ul li{
+    height: 45px;
+    width: 100%;
+    line-height: 45px;
+    background-color: #262626;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ul li:nth-child(2n){
+    background: #1b1b1b;
+}
+ul li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+ul li:last-child span { 
+    border-radius: 0  10px 10px 10px;
+}
+ul li span{
+    margin-right: 20px;
+    height: 45px;
+    width: 45px;
+    margin-left: -45px;
+    background: #e74c3c;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+ul li:hover span{
+    margin-left: 0px;
+}
